@@ -7,11 +7,10 @@ b.El DNI del paciente más joven.}
 
 program Ej3;
 var
-	DNI, DNI_M3, DNI_PJ, suma_edad, edad, edad_min : integer; 
+	DNI, DNI_M3, DNI_PJ, suma_edad, edad, edad_min : integer;
 	promedio : real;
 begin
 	{Inicializo variables}
-	DNI_PJ := 0;
 	edad := 0;
 	suma_edad := 0;
 	edad_min := 200;
@@ -20,7 +19,7 @@ begin
 	while(DNI <> 0) do begin
 		writeln('Ingrese EDAD del paciente');
 		readln(edad);
-		if (DNI > 3000) then begin
+		if (DNI > 300) then begin
 			suma_edad := suma_edad + edad;
 		end;
 		if (edad < edad_min) then begin
@@ -33,7 +32,6 @@ begin
 	end;
 		promedio := suma_edad / 100;
 		writeln('La edad promedio de los pacientes con DNI mayor a 300 son: ', promedio:2:2);
-		writeln('El DNI del paciente mas joven es: ', DNI_PJ:2:2);		
+		writeln('El DNI del paciente mas joven es: ', DNI_PJ);
 	readln;
-end.    
-
+end.
