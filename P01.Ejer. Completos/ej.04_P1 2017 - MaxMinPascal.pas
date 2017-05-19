@@ -7,7 +7,7 @@ c.La suma total de los números leídos.}
 
 program EJ4;
 var
-suma, num_max, num_min, contador, numero: integer;
+suma, num_max, num_min, numero: integer;
 begin
 	suma := 100;
 	numero := 0;
