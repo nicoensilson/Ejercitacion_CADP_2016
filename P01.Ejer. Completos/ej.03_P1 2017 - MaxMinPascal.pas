@@ -23,10 +23,9 @@ begin
 			suma_edad := suma_edad + edad;
 		end;
 		if (edad < edad_min) then begin
-			edad_min := edad;
 			DNI_PJ := DNI;
+			edad_min := edad;
 		end;
-		DNI_PJ := DNI;
 		writeln('Ingrese DNI del paciente');
 		readln(DNI);
 	end;
