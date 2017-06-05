@@ -2,7 +2,7 @@
 La secuencia está dividida en palabras, separadas por uno o más blancos. 
 Informar la cantidad de palabras.}
 
-program palabra;
+program EJ_02;
 var
 	cantPal:integer; {Contador de palabras}
 	car:char;

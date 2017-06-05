@@ -3,7 +3,7 @@ La secuencia está dividida en palabras, separadas por uno o más blancos.
 Informar:
 a.La longitud de la palabra más larga.
 b.La longitud de la palabra más corta.
-c.La longitud contador.}
+c.La longitud promedio.}
 
 program Ej_2;
 
