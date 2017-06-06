@@ -2,27 +2,30 @@
 está dividida en palabras, separadas por uno o más blancos. 
 Informar la cantidad de palabras que finali%an con “S” o “s”}
 
-program Ej_05;
+
+Program palabra;
 var
-	cantPal:integer; {Contador de palabras}
-	car, ant:char;
+  cantPal:integer;
+  car, ant:char;
 begin
-  cantPal:=0;         
+  cantPal:=0;    
   read(car);
-  while (car = ' ') do  {Descarto blancos}
-    read(car); 
-  while (car <> '.') do begin
-    if (car <> ' ') then begin    
+  while (car = ' ') do
+    read(car);
+  while (car <> '%') do begin
+    if (car <> ' ') then begin
+      while (car <> '%') and (car <> ' ' ) do begin
         ant:=car;
         read(car);
-      if (ant = 'S') or (ant = 's') then {Si la ultima letra fue una S o s cuento la palabra}
+      end;
+      if (ant = 'S') or (ant = 's') then
         cantPal:=cantPal+1;
     end
-    else 
-      while (car <> '.') and (car <> ' ') do  
+    else
+      while (car <> '%') and (car <> ' ' ) do
         read(car);
-    while (car = ' ') do    {Descarto blancos}  
-      read(car); 
+    while (car = ' ') do
+      read(car);
   end;
   writeln('La cantidad de palabras es: ', cantPal);
 end.

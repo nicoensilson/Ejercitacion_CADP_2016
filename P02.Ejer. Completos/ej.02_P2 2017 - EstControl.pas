@@ -8,6 +8,7 @@ var
 	car:char;
 begin
   cantPal:=0;         
+  writeln('Ingrese texto');
   read(car);
   {Descarto blancos}
   while (car = ' ') do 
