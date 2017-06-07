@@ -11,32 +11,31 @@ La cantidad de palabras por oración.}
 program Ej_06;
 var
       car:char;
-      cont_oraciones, suma, oracion:integer;
+      cont_oraciones, oracion:integer;
 begin
-      suma := 0;
       writeln('Ingrese Texto');
       read(car);
       oracion:=0;
       while (car<>'*') do begin
-            while (car='.') do
-                  read(car);
-            cont_oraciones:=0;
-            while (car<>'.') and (car<>'*') do begin
-            	while (car = ' ') do //
+        while (car='.') do
+          read(car);
+        cont_oraciones:=0;
+        while (car<>'.') and (car<>'*') do begin
+         	while (car = ' ') do //
   				  read(car); 
   				while (car <> '.') do begin
     				cont_oraciones:=cont_oraciones+1;
-    				suma := suma + 1;
     				while (car <> '.') and (car <> ' ' ) do
-      					read(car);
+      				read(car);
 			    	while (car = ' ') do   // 
-                  		read(car);
-                end;
-            end;
-            oracion := oracion + 1;
-            writeln('Oracion ',oracion, ': ',cont_oraciones);
-            while (car <> '*') and (car <> ' ') do 
-            	read(car);
+           		read(car);
+          end;
+        end;
+        oracion := oracion + 1;
+        writeln('Oracion ',oracion, ': ',cont_oraciones);
+        while (car <> '*') and (car <> ' ') do 
+        read(car);
       end;
-      writeln('Palabras total: ', suma);
+      writeln('oracion: ', oracion);
 end.
+{hata quier}

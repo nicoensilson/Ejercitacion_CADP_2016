@@ -6,18 +6,13 @@ program Ej_04;
 var
 	letra_t : integer;
 	letra : char;
-begin
-	
+begin	
 	letra_t := 0;
-	
 	writeln('Ingrese la secuencia');
-
 	read(letra);
 	while (letra = ' ') do //leo y descarto comas y blancos
 	  read(letra);
-
-	while (letra <> '@') do
-	begin
+	while (letra <> '@') do	begin
 		if (letra = 't') or (letra = 'T') then //comienza una palabra, me fijo con qué letra empieza
 			letra_t := letra_t + 1;
 			
